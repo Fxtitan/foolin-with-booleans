@@ -45,6 +45,15 @@ const both = (justAParam1, justAParam2) => {
   }
 }
 
+const firstOnly = (param1, param2) => {
+  if( param1 === true && param2 === false) {
+    return true
+  } else if (param1 === false && param2 === true || either(param1, param2)){
+    return false
+  } else {
+    return false
+  }
+  }
 
 
 
