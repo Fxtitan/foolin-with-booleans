@@ -1,6 +1,51 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+const theJokeIsAwesome = true;
+const iGetTheJoke = theJokeIsAwesome;
+
+const iAmHavingFun = true;
+const havingFun = iAmHavingFun;
+
+const iAmLearning = true;
+const learning = iAmLearning;
+
+const killingIt = iAmHavingFun && iAmLearning === true;
+killingIt;
+
+const returnFalse = (alwaysFalse) => {
+  return alwaysFalse = false;
+}
+returnFalse();
+
+const isOpposite = (opposite) => {
+  if(opposite === true) {
+    return false;
+  } else if(opposite === false) {
+    return true;
+  } 
+}
+isOpposite();
+
+const either = (thing1, thing2) => {
+  if(thing1 || thing2 === true) {
+    return true;
+  } else {
+    return false
+  }
+}
+either();
+
+
+const both = (justAParam1, justAParam2) => {
+  if( justAParam1 && justAParam2 == true) {
+    return true;
+  } if(either(justAParam1, justAParam2) || either(justAParam1, !justAParam2)) {
+    return false;
+  }
+}
+
+
 
 
 
